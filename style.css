@@ -17,17 +17,17 @@ body {
 
 #display {
     width: 100%;
+    height: 80px;
     padding: 20px;
-    font-size: 2rem;
-    text-align: left;
+    font-size: 4rem;
+    text-align: right;
     border: none;
-    background-color: hsl(0, 0%, 15%);
+    background-color: hsl(0, 0%, 30%);
     color: white;
+    box-sizing: border-box;
 }
 
 #keys {
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -37,7 +37,7 @@ body {
 button {
     width: 50px;
     height: 50px;
-    border-radius: 50px; /* make buttons round */
+    border-radius: 50px;
     border: none;
     background-color: hsl(0, 0%, 30%);
     color: white;
@@ -58,10 +58,25 @@ button:active {
     background-color: hsl(35, 100%, 55%);
 }
 
-/* if you choose grid, delete this class */
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
+
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1 1 21%;
+}
+
+.zero-btn {
+    flex-grow: 12;
+}
+
+.special-btn {
+    background-color: hsl(0, 0%, 50%);
 }
